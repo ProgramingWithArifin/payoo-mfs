@@ -1,48 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payoo | Login</title>
     <!-- daisy and tailwind setup -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- custom css setup -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- favicon setup -->
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <!-- font setup -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <section class="flex justify-center items-center h-screen flex-col gap-10">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-base-200">
+    <section class="min-h-screen max-w-md bg-base-100 mx-auto">
+      <section
+        class="flex justify-center items-center h-screen flex-col gap-10"
+      >
         <div role="alert" class="absolute top-2 alert alert-success">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-            </svg>
-            <span>Default Number:01234567890 and Pin:1234</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 shrink-0 stroke-current"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+            />
+          </svg>
+          <span>Default Number:01234567890 and Pin:1234</span>
         </div>
         <div class="logo w-full max-w-sm">
-            <img class="mx-auto" src="assets/Logo-full.png" alt="">
+          <img class="mx-auto" src="assets/Logo-full.png" alt="" />
         </div>
         <div class="form w-full max-w-sm">
-            <div class="card bg-base-100  shrink-0 shadow rounded-2xl">
-                <div class="card-body">
-                    <fieldset class="fieldset">
-                        <label class="label text-neutral font-bold">Number</label>
-                        <input id="number" type="text" pattern="[0-9]*" maxlength="11" minlength="11" class="input rounded-full bg-base-200" placeholder="Enter your 11 digit number" />
-                        <label class="label text-neutral font-bold">4 Digit Pin</label>
-                        <input type="password" id="pin" maxlength="4" minlength="4" class="input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" />
-                        <button id="login-btn" class="btn btn-primary mt-4 rounded-full">Login</button>
-                    </fieldset>
-                </div>
-             </div>
+          <div class="card bg-base-100 shrink-0 shadow rounded-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="label text-neutral font-bold">Number</label>
+                <input
+                  id="number"
+                  type="text"
+                  pattern="[0-9]*"
+                  maxlength="11"
+                  minlength="11"
+                  class="input rounded-full bg-base-200"
+                  placeholder="Enter your 11 digit number"
+                />
+                <label class="label text-neutral font-bold">4 Digit Pin</label>
+                <input
+                  type="password"
+                  id="pin"
+                  maxlength="4"
+                  minlength="4"
+                  class="input rounded-full bg-base-200"
+                  placeholder="Enter 4 Digit Pin"
+                />
+                <button
+                  id="login-btn"
+                  class="btn btn-primary mt-4 rounded-full"
+                >
+                  Login
+                </button>
+              </fieldset>
+            </div>
+          </div>
         </div>
+      </section>
     </section>
     <script src="js/login.js"></script>
-</body>
+  </body>
 </html>
