@@ -48,34 +48,34 @@
         <p class="text-neutral/60">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
         <!-- menu buttons  -->
         <div class="buttons grid grid-cols-3 gap-3">
-            <button class="btn flex-col h-full py-4">
+            <button onclick="showOnly('add-money')" class="btn flex-col h-full py-4">
                 <img src="./assets/opt-1.png" alt="">
                 <p class="text-neutral/60">Add Money</p>
             </button>
-            <button class="btn flex-col h-full py-4">
+            <button onclick="showOnly('cashout')" class="btn flex-col h-full py-4">
                 <img src="./assets/opt-2.png" alt="">
                 <p class="text-neutral/60">Cashout</p>
             </button>
-            <button class="btn flex-col h-full py-4">
+            <button onclick="showOnly('send-money')" class="btn flex-col h-full py-4">
                 <img src="./assets/opt-3.png" alt="">
                 <p class="text-neutral/60">Send Money</p>
             </button>
-            <button class="btn flex-col h-full py-4">
+            <button onclick="showOnly('get-bonus')" class="btn flex-col h-full py-4">
                 <img src="./assets/opt-4.png" alt="">
                 <p class="text-neutral/60">Get Bonus</p>
             </button>
-            <button class="btn flex-col h-full py-4">
+            <button onclick="showOnly('pay-bill')" class="btn flex-col h-full py-4">
                 <img src="./assets/opt-5.png" alt="">
                 <p class="text-neutral/60">Pay Bill</p>
             </button>
-            <button class="btn flex-col h-full py-4">
+            <button onclick="showOnly('transactions')" class="btn flex-col h-full py-4">
                 <img src="./assets/opt-6.png" alt="">
                 <p class="text-neutral/60">Transactions</p>
             </button>
         </div>
     </section>
 <!-- Add money section -->
- <section id="add-money" class="w-11/12 mx-auto py-5">
+ <section id="add-money" class="w-11/12 mx-auto py-5 hidden">
     <h2 class="text-xl font-bold mb-5">
             Add Money
         </h2>

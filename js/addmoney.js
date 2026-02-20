@@ -13,7 +13,10 @@ document.getElementById("add-money-btn").addEventListener("click",function(){
                 if(addAmount>0){
                     let newBalance = balance+addAmount;
                     setBalance(newBalance);
-                    alert("Add Money Successful");
+                    alert(`Add Money Success
+                        Amount:${addAmount}Taka
+                        Bank:${bank}
+                        Account:${accountNumber}`);
                 }
                 else{
                     alert("Enter A Valid Amount")

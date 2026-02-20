@@ -7,7 +7,9 @@ if(agentNumber.length === 11 && agentNumber.startsWith("01") && !isNaN(agentNumb
         if(balance>=amount && amount>0){
             let newBalance = balance-amount;
             setBalance(newBalance);
-            alert("Cashout Successful");
+            alert(`Cashout Successful 
+                To:${agentNumber} 
+                Amount:${amount}`);
             return;
         }
         else{
