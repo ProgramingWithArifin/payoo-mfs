@@ -75,9 +75,9 @@
         </div>
     </section>
 <!-- Add money section -->
- <section id="add-money" class="w-11/12 mx-auto py-5 hidden">
-    <h2 class="text-xl font-bold mb-5">
-            Add Money
+    <section id="add-money" class="w-11/12 mx-auto py-5 hidden">
+        <h2 class="text-xl font-bold mb-5">
+                Add Money
         </h2>
         <div class="form w-full">
             <div class="card bg-base-100 shadow rounded-2xl">
@@ -101,7 +101,7 @@
                 </div>
              </div>
         </div>
- </section>
+    </section>
     <!-- cash out section  -->
     <section id="cashout" class="w-11/12 mx-auto py-5 hidden">
         <h2 class="text-xl font-bold mb-5">
@@ -154,8 +154,36 @@
                 <div class="card-body">
                     <fieldset class="fieldset">
                         <label class="label text-neutral font-bold">Enter Bonus Cupon</label>
-                        <input id="bonus-cupon" type="number" class="w-full input rounded-full bg-base-200" placeholder="Enter Your Cupon" />
+                        <input id="bonus-cupon" type="text" class="w-full input rounded-full bg-base-200" placeholder="Enter Your Cupon" />
                         <button id="bonus-btn" class="btn btn-primary mt-4 rounded-full w-full">Get Bonus</button>
+                    </fieldset>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <section id="pay-bill" class="w-11/12 mx-auto py-5 hidden">
+        <h2 class="text-xl font-bold mb-5">
+            Pay Bill
+        </h2>
+        <div class="form w-full">
+            <div class="card bg-base-100 shadow rounded-2xl">
+                <div class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label text-neutral font-bold">Select To Pay</label>
+                        <select id="select-pay" class="select w-full  rounded-full bg-base-200">
+                            <option disabled selected>Select</option>
+                            <option value="Current">Current</option>
+                            <option value="Gas">Gas</option>
+                            <option value="Internet">Internet</option>
+                        </select>   
+                        <label class="label text-neutral font-bold">Amount To Pay</label>
+                        <input id="pay-amount" type="number" class="w-full input rounded-full bg-base-200" placeholder="Enter Amount" />
+                        <label class="label text-neutral font-bold">Biller Account Number</label>
+                        <input id="pay-account-number" type="text" pattern="[0-9]*" maxlength="11" minlength="11" class="w-full input rounded-full bg-base-200" placeholder="Enter biller account number" />
+                        <label class="label text-neutral font-bold">4 Digit Pin</label>
+                        <input type="password" id="pay-pin" maxlength="4" minlength="4" class="input w-full rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" />
+                        <button id="pay-btn" class="btn btn-primary mt-4 rounded-full w-full">Pay Now</button>
                     </fieldset>
                 </div>
              </div>
@@ -165,5 +193,7 @@
     <script src="js/addmoney.js"></script>
     <script src="js/cashout.js"></script>
     <script src="js/sendmoney.js"></script>
+    <script src="js/bonus.js"></script>
+    <script src="js/pay.js"></script>
 </body>
 </html>

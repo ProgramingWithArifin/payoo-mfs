@@ -12,7 +12,7 @@ if(reciverNumber.length === 11 && reciverNumber.startsWith("01") && !isNaN(reciv
                 Amount:${amount}`);
         }
         else{
-            alert("Not Enough Amount");
+            alert("Not Enough Balance");
         }
     } else {
         alert("Enter A Valid Number And Pin");
