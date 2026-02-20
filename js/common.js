@@ -21,11 +21,15 @@ function showOnly(id){
     // calling all the section to hide 
     const addMoney=document.getElementById("add-money");
     const cashout= document.getElementById("cashout")
+    const sendMoney=document.getElementById("send-money")
+    const bonus=document.getElementById("get-bonus")
     // calling the section to show 
     let show = document.getElementById(id);
     // hiding section 
     addMoney.classList.add("hidden");
     cashout.classList.add("hidden");
+    sendMoney.classList.add("hidden")
+    bonus.classList.add("hidden")
     // only show this section 
     show.classList.remove("hidden");
 }
