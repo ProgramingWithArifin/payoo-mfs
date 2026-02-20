@@ -17,6 +17,8 @@ document.getElementById("add-money-btn").addEventListener("click",function(){
                         Amount:${addAmount}Taka
                         Bank:${bank}
                         Account:${accountNumber}`);
+                    let history = (`Add Money Bank:${bank} Account:${accountNumber} Amount:${addAmount}Taka`);
+                    sethistory(history)
                 }
                 else{
                     alert("Enter A Valid Amount")

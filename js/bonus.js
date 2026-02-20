@@ -5,6 +5,8 @@ document.getElementById("bonus-btn").addEventListener("click",function(){
         let newBalance = balance+100;
         setBalance(newBalance);
         alert('You Got Bonus 100 Taka');
+        let history = (`Bonus 100 Taka`);
+        sethistory(history)
     }
     else{
         alert("Enter A Valid Cupon")

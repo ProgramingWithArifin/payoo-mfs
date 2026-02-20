@@ -18,6 +18,8 @@ document.getElementById("pay-btn").addEventListener("click",function(){
                         To:${select}
                         Account Number:${accountNumber} 
                         Amount:${payAmount}`);
+                    let history = (`Pay Bill To:${select} Account Number:${accountNumber} Amount:${payAmount}`);
+                    sethistory(history)
                 }
                 else{
                     alert("Not Enough Balance")

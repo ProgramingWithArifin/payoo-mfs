@@ -10,7 +10,8 @@ if(agentNumber.length === 11 && agentNumber.startsWith("01") && !isNaN(agentNumb
             alert(`Cashout Successful 
                 To:${agentNumber} 
                 Amount:${amount}`);
-            return;
+            let history = (`Cashout To:${agentNumber} Amount:${amount}`);
+            sethistory(history)
         }
         else{
             alert("Not Enough Amount");

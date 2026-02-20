@@ -10,6 +10,8 @@ if(reciverNumber.length === 11 && reciverNumber.startsWith("01") && !isNaN(reciv
             alert(`Send Money Successful
                 To:${reciverNumber} 
                 Amount:${amount}`);
+            let history = (`Send Money To:${reciverNumber} Amount:${amount}`);
+            sethistory(history)
         }
         else{
             alert("Not Enough Balance");

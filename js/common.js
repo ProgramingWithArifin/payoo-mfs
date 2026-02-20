@@ -24,6 +24,7 @@ function showOnly(id){
     const sendMoney=document.getElementById("send-money")
     const bonus=document.getElementById("get-bonus")
     const bill= document.getElementById("pay-bill")
+    const history= document.getElementById("transactions")
     // calling the section to show 
     let show = document.getElementById(id);
     // hiding section 
@@ -32,6 +33,19 @@ function showOnly(id){
     sendMoney.classList.add("hidden")
     bonus.classList.add("hidden")
     bill.classList.add("hidden")
+    history.classList.add("hidden")
     // only show this section 
     show.classList.remove("hidden");
+}
+
+// to add transactions
+function sethistory(details){
+    const history = document.getElementById("history-container");
+    const newHistory=document.createElement("div")
+    newHistory.innerHTML=`
+    <div class="transactions-card p-5 rounded bg-base-100">
+        ${details}
+    </div>
+    `
+    history.append(newHistory);
 }
